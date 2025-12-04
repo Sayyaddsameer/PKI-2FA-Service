@@ -1,0 +1,35 @@
+services:
+  app:
+    # Build configuration
+    build: .
+
+    # Container name (makes it easier to find)
+    container_name: pki-2fa-service
+
+    # Port mapping
+    # Maps Host 8080 -> Container 8080
+    ports:
+      - "8080:8080"
+
+    # Volume mounts
+    volumes:
+      # Persistent storage for the seed
+      - seed-data:/data
+      # Persistent storage for cron logs
+      - cron-output:/cron
+      # Mount keys read-only (:ro) for safety during local dev
+      - ./student_private.pem:/app/student_private.pem:ro
+      - ./student_public.pem:/app/student_public.pem:ro
+      - ./instructor_public.pem:/app/instructor_public.pem:ro
+
+    # Environment variables
+    environment:
+      - TZ=UTC
+
+    # Restart policy
+    restart: unless-stopped
+
+# Define the named volumes
+volumes:
+  seed-data:
+  cron-output:
