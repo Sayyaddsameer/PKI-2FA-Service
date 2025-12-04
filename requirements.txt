@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+cryptography
+pyotp
+requests
+python-multipart
