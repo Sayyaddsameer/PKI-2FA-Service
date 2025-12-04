@@ -19,7 +19,7 @@ else:
     # Local Windows fallback
     DATA_DIR = os.path.join(os.getcwd(), "data_test")
     os.makedirs(DATA_DIR, exist_ok=True)
-    print(f⚠️  RUNNING LOCALLY: Using storage at {DATA_DIR}")
+    print(f"⚠️  RUNNING LOCALLY: Using storage at {DATA_DIR}")
 
 SEED_FILE_PATH = os.path.join(DATA_DIR, "seed.txt")
 PRIVATE_KEY_PATH = "student_private.pem"
