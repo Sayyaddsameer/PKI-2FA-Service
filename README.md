@@ -61,7 +61,7 @@ PKI-2FA-Service/
 
 1.  **Clone the repository:**
     
-    git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
+    git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/Sayyaddsameer/PKI-2FA-Service.git)
     cd YOUR_REPO_NAME
     
 
