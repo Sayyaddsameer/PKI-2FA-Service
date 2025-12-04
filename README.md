@@ -31,27 +31,7 @@ The service is built with **FastAPI**, containerized with **Docker**, and includ
 
 ---
 
-## Project Structure
 
-PKI-2FA-Service/
-├── app/
-│   ├── main.py              # FastAPI application entry point
-│   ├── models.py            # Pydantic data models
-│   ├── crypto_utils.py      # RSA decryption logic
-│   └── totp_utils.py        # TOTP generation & verification logic
-├── cron/
-│   └── 2fa-cron             # Cron job definition (LF line endings)
-├── scripts/
-│   ├── generate_keys.py     # Setup: Generates RSA keypair
-│   ├── request_seed.py      # Setup: Requests encrypted seed from API
-│   ├── log_2fa_cron.py      # Runtime: Script executed by cron
-│   └── generate_proof.py    # Submission: Generates signed commit proof
-├── Dockerfile               # Multi-stage Docker build
-├── docker-compose.yml       # Service orchestration and volumes
-├── requirements.txt         # Python dependencies
-└── README.md                # Project documentation
-
-## Getting Started
 
 ### Prerequisites
 * Docker & Docker Compose installed on your machine.
@@ -61,7 +41,7 @@ PKI-2FA-Service/
 
 1.  **Clone the repository:**
     
-    git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/Sayyaddsameer/PKI-2FA-Service.git)
+    git clone [https://github.com/Sayyaddsameer/PKI-2FA-Service.git](https://github.com/Sayyaddsameer/PKI-2FA-Service)
     cd YOUR_REPO_NAME
     
 
